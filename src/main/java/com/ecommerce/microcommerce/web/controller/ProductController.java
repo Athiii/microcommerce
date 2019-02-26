@@ -21,7 +21,7 @@ public class ProductController {
     @Autowired
     private ProductDao productDao;
 
-    @RequestMapping(value="/test", method= RequestMethod.GET)
+    @RequestMapping(value={"/test","","/"}, method= RequestMethod.GET)
     public String hello(){
         return "HELLO";
     }
